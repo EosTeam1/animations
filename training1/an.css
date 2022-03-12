@@ -1,0 +1,63 @@
+h1{
+    font-size: xx-large;
+    text-align: center;
+    padding-bottom: 5%;
+    color: rgb(243, 16, 156);
+
+}
+body{
+    background-color: rgb(48, 4, 68);
+}
+.imgis{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+ 
+.first {
+    position: relative;
+    height: 20%;
+    width: 40%;
+    
+}
+.first img {
+    width: 100%;
+    height: 100%;
+    
+
+    
+}
+.scend {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.scend:hover {
+    opacity: 1;
+}
+
+.img3::after{
+    content: 'ince sea';
+    color: beige;
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+    align-items: center;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    top: 0%;
+    left: 0%
+    
+    
+
+}
+
+.img3:hover::after{
+    opacity: 0.5;
+
+}

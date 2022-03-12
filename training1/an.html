@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first_anmation</title>
+    <link rel="stylesheet" href="an.css">
+    <style>h1{
+        font-size: xx-large;
+        text-align: center;
+        padding-bottom: 5%;
+        color: rgb(243, 16, 156);
+    
+    }
+    body{
+        background-color: rgb(48, 4, 68);
+    }
+    .imgis{
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+    }
+     
+    .first {
+        position: relative;
+        height: 20%;
+        width: 40%;
+        
+    }
+    .first img {
+        width: 100%;
+        height: 100%;
+    
+        
+    }
+    .scend {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .scend:hover {
+        opacity: 1;
+    }
+    
+    .img3::after{
+        content: 'ince sea';
+        color: beige;
+        display: flex;
+        justify-content: center;
+        font-size: 300%;
+        align-items: center;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        top: 0%;
+        left: 0%
+        
+        
+    
+    }
+    
+    .img3:hover::after{
+        opacity: 0.5;
+    
+    }</style>
+</head>
+<body>
+    <h1>img anmation</h1>
+<div class="imgis">
+    <div class="first">
+     <img src="https://modo3.com/thumbs/fit630x300/203384/1557391921/%D9%83%D9%85_%D8%A8%D8%AD%D8%B1_%D9%81%D9%8A_%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85.jpg" width="40%" height="20%"  alt=""  srcset="">
+     <img class="scend" width="40%" height="20%" src="https://www.maw9i3i.net/wp-content/uploads/2021/10/%D9%83%D9%84%D8%A7%D9%85-%D8%AC%D9%85%D9%8A%D9%84-%D8%B9%D9%86-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D9%88-%D9%85%D9%86%D8%B8%D8%B1-%D8%BA%D8%B1%D9%88%D8%A8-%D8%A7%D9%84%D8%B4%D9%85%D8%B3-%D8%A7%D9%84%D8%B3%D8%A7%D8%AD%D8%B1.jpg" alt=""  srcset="">
+    </div>
+     <div class="first img3">
+      <img  width="40%" height="20%" src="https://cdn.al-ain.com/images/2018/7/21/127-151223-sea-water-entertainment-health-benefits_700x400.jpeg" alt=""  srcset="">
+     </div>
+</div>
+    
+</body>
+</html>
